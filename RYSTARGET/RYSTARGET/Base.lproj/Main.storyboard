@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,89 +18,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="aJx-dY-KVE">
+                                <rect key="frame" x="0.0" y="-7" width="568" height="329"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4Q-as-sea">
                                 <rect key="frame" x="60" y="-2" width="449" height="324"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-aM-thj">
-                                        <rect key="frame" x="15" y="274" width="46" height="30"/>
-                                        <state key="normal" title="Reset"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhb-aM-thj">
+                                        <rect key="frame" x="25" y="273" width="32" height="32"/>
+                                        <state key="normal" image="StartOverIcon.png" backgroundImage="SmallButton.png"/>
                                         <connections>
                                             <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gsr-o8-hXX"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD4-Vr-7VZ">
                                         <rect key="frame" x="182" y="278" width="71" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.96999073449999995" green="1" blue="0.97801026440000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7i5-Qt-2SM">
                                         <rect key="frame" x="381" y="112" width="35" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.96999073449999995" green="1" blue="0.97801026440000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puntuacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OW-1Y-8r4">
                                         <rect key="frame" x="82" y="278" width="92" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.96999073449999995" green="1" blue="0.97801026440000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ronda" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyY-Yz-7xX">
                                         <rect key="frame" x="252" y="278" width="57" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.96999073449999995" green="1" blue="0.97801026440000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5M-F9-rGr">
                                         <rect key="frame" x="401" y="20" width="36" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.96999073449999995" green="1" blue="0.97801026440000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5o-V4-foH">
                                         <rect key="frame" x="25" y="112" width="21" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.96999073449999995" green="1" blue="0.97801026440000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgl-Te-nft">
-                                        <rect key="frame" x="370" y="274" width="46" height="30"/>
-                                        <state key="normal" title="Info"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgl-Te-nft">
+                                        <rect key="frame" x="377" y="273" width="32" height="32"/>
+                                        <state key="normal" image="InfoButton.png" backgroundImage="SmallButton.png"/>
                                         <connections>
                                             <segue destination="Qtj-4D-c4D" kind="modal" modalTransitionStyle="flipHorizontal" id="ON9-Hp-vfD"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcG-VQ-PKC">
                                         <rect key="frame" x="317" y="278" width="39" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.96999073449999995" green="1" blue="0.97801026440000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pulsa el Target y acercate lo máximo  al numero :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BZ-Gl-IHW">
                                         <rect key="frame" x="15" y="20" width="375" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="0.96999073449999995" green="1" blue="0.97801026440000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr1-gc-NlP">
+                                        <rect key="frame" x="160" y="183" width="121" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Pulsame" backgroundImage="Button-Normal.png">
+                                            <color key="titleColor" red="0.396078431372549" green="0.12941176470588237" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="Button-Highlighted.png">
+                                            <color key="titleColor" red="0.35686274509803922" green="0.12549019607843137" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showAlertACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zc7-Ae-omW"/>
+                                        </connections>
+                                    </button>
                                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2hU-OZ-Xwn">
-                                        <rect key="frame" x="23" y="123" width="395" height="31"/>
-                                        <color key="minimumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="maximumTrackTintColor" red="0.051693254270000003" green="0.78581436819999995" blue="0.25600475090000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="23" y="136" width="395" height="31"/>
                                         <color key="thumbTintColor" red="0.81865410530000005" green="0.84865274229999998" blue="0.83180847390000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="sliderMovidoACTION:" destination="BYZ-38-t0r" eventType="valueChanged" id="TUt-vD-Xdk"/>
                                         </connections>
                                     </slider>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr1-gc-NlP">
-                                        <rect key="frame" x="140" y="183" width="161" height="50"/>
-                                        <state key="normal" title="Pulsame"/>
-                                        <connections>
-                                            <action selector="showAlertACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zc7-Ae-omW"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="324" id="5F3-qq-s98"/>
                                     <constraint firstAttribute="width" constant="449" id="dCb-A3-ZWQ"/>
@@ -109,6 +116,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="o4Q-as-sea" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3aE-2i-peu"/>
+                            <constraint firstItem="aJx-dY-KVE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-7" id="Aob-Px-jzd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aJx-dY-KVE" secondAttribute="trailing" constant="-20" id="aWQ-NV-Kl1"/>
+                            <constraint firstItem="aJx-dY-KVE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dXS-YU-ZTD"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aJx-dY-KVE" secondAttribute="bottom" constant="-2" id="n6p-1X-AGi"/>
                             <constraint firstItem="o4Q-as-sea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nso-JM-lDp"/>
                         </constraints>
                     </view>
@@ -136,29 +147,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="g9g-68-0gs">
+                                <rect key="frame" x="0.0" y="-16" width="568" height="336"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXI-vV-rGy">
                                 <rect key="frame" x="51" y="16" width="466" height="288"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEO-Ht-Fmo">
                                         <rect key="frame" x="20" y="238" width="92" height="30"/>
-                                        <state key="normal" title="enviar mail"/>
+                                        <state key="normal" title="enviar mail" backgroundImage="Button-Normal.png">
+                                            <color key="titleColor" red="0.45490196078431372" green="0.15686274509803921" blue="0.050980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="sendMailToSuportTeam:" destination="Qtj-4D-c4D" eventType="touchUpInside" id="69Q-7r-Qvg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1o-Pa-0KO">
-                                        <rect key="frame" x="403" y="22" width="43" height="30"/>
-                                        <state key="normal" title="Volver"/>
-                                        <connections>
-                                            <action selector="volverACTION:" destination="Qtj-4D-c4D" eventType="touchUpInside" id="cBg-YX-ZFW"/>
                                         </connections>
                                     </button>
                                     <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYc-xX-cRS">
                                         <rect key="frame" x="49" y="80" width="364" height="128"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                     </webView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1o-Pa-0KO">
+                                        <rect key="frame" x="403" y="22" width="55" height="30"/>
+                                        <state key="normal" title="Volver" backgroundImage="Button-Normal.png">
+                                            <color key="titleColor" red="0.43529411764705883" green="0.14117647058823529" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="volverACTION:" destination="Qtj-4D-c4D" eventType="touchUpInside" id="cBg-YX-ZFW"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="288" id="4j8-v0-PES"/>
                                     <constraint firstAttribute="width" constant="466" id="wFx-Yl-Pov"/>
@@ -168,7 +185,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vXI-vV-rGy" firstAttribute="centerX" secondItem="xOR-fX-vGU" secondAttribute="centerX" id="Kbg-9p-edo"/>
+                            <constraint firstItem="g9g-68-0gs" firstAttribute="top" secondItem="xOR-fX-vGU" secondAttribute="topMargin" constant="-16" id="Pw7-KP-3ao"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g9g-68-0gs" secondAttribute="trailing" constant="-20" id="bMe-Tj-OI4"/>
                             <constraint firstItem="vXI-vV-rGy" firstAttribute="centerY" secondItem="xOR-fX-vGU" secondAttribute="centerY" id="iLn-yM-y0v"/>
+                            <constraint firstItem="g9g-68-0gs" firstAttribute="leading" secondItem="xOR-fX-vGU" secondAttribute="leadingMargin" constant="-20" id="lQl-0W-859"/>
+                            <constraint firstItem="X2o-ux-am5" firstAttribute="top" secondItem="g9g-68-0gs" secondAttribute="bottom" id="opb-Es-I0c"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -181,4 +202,12 @@
             <point key="canvasLocation" x="275" y="971"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background.png" width="480" height="320"/>
+        <image name="Button-Highlighted.png" width="100" height="37"/>
+        <image name="Button-Normal.png" width="100" height="37"/>
+        <image name="InfoButton.png" width="10" height="22"/>
+        <image name="SmallButton.png" width="32" height="32"/>
+        <image name="StartOverIcon.png" width="20" height="20"/>
+    </resources>
 </document>

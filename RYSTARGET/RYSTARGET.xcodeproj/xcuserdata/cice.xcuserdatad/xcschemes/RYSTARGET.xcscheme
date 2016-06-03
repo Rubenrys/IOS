@@ -85,7 +85,8 @@
       buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Distribution"
+      customArchiveName = "RYTARGET"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
