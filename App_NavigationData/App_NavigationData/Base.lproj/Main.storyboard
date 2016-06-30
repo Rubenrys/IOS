@@ -51,8 +51,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="pbn-qR-Thh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="694" y="406"/>
+            <point key="canvasLocation" x="795" y="406"/>
         </scene>
         <!--Segunda Ventana View Controller-->
         <scene sceneID="njZ-93-PoX">
@@ -202,7 +203,7 @@
                                     <color key="titleColor" red="1" green="0.98513631779999999" blue="0.92488553539999996" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IAw-kY-qPp" kind="push" id="AsJ-Ib-AuP"/>
+                                    <segue destination="IAw-kY-qPp" kind="push" identifier="segueV4" id="AsJ-Ib-AuP"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo Postal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vf-JG-9am">
@@ -227,12 +228,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o9D-QP-Ikg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1576" y="406"/>
+            <point key="canvasLocation" x="1553" y="406"/>
         </scene>
-        <!--View Controller-->
+        <!--Ventana Cuatro View Controller-->
         <scene sceneID="MMo-19-qX9">
             <objects>
-                <viewController id="IAw-kY-qPp" sceneMemberID="viewController">
+                <viewController id="IAw-kY-qPp" customClass="VentanaCuatroViewController" customModule="App_NavigationData" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KVc-Xu-JK1"/>
                         <viewControllerLayoutGuide type="bottom" id="oEr-tQ-HBX"/>
@@ -290,21 +291,55 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jq-dB-Jy4">
-                                <rect key="frame" x="109" y="341" width="102" height="30"/>
+                                <rect key="frame" x="109" y="410" width="102" height="30"/>
                                 <color key="backgroundColor" red="0.12549019607843137" green="0.29411764705882354" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="Enviar Mail"/>
+                                <connections>
+                                    <action selector="mylogout:" destination="IAw-kY-qPp" eventType="touchUpInside" id="pwO-db-kzu"/>
+                                    <action selector="sendMailToRecipient:" destination="IAw-kY-qPp" eventType="touchUpInside" id="IUB-t5-Rgo"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tutoria con Andres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmo-JV-0d4">
+                                <rect key="frame" x="20" y="315" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha y hora " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IKc-cK-mpH">
+                                <rect key="frame" x="20" y="344" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="showDatePicker:" destination="IAw-kY-qPp" eventType="editingDidBegin" id="WsK-cc-EgS"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mmy-Y2-hEW">
-                        <barButtonItem key="rightBarButtonItem" title="Cerrar" id="whK-zd-VuY"/>
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar" id="whK-zd-VuY">
+                            <connections>
+                                <segue destination="pbn-qR-Thh" kind="unwind" unwindAction="cerrarVC:" id="1Ab-3w-SAZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="myApellidoLBL" destination="331-My-hzp" id="378-se-tZ7"/>
+                        <outlet property="myCiudadLBL" destination="HDD-pw-9WS" id="cz5-TM-v7y"/>
+                        <outlet property="myCodigoPostalLBL" destination="E22-uw-STf" id="oAE-fb-kCb"/>
+                        <outlet property="myDireccionLBL" destination="UmI-IL-1Gt" id="3mq-VG-fXI"/>
+                        <outlet property="myEdadPerroLBL" destination="S3q-7i-eEe" id="kv3-a5-Di0"/>
+                        <outlet property="myNombreLBL" destination="Tae-7a-Vxz" id="lQ3-Ay-yhk"/>
+                        <outlet property="myPosicionGeoLBL" destination="jzn-bm-EC8" id="SjA-AM-Dvo"/>
+                        <outlet property="myTelefonoLBL" destination="bRo-rC-P41" id="hqx-GG-BFh"/>
+                        <outlet property="myTutoriaLBL" destination="Nmo-JV-0d4" id="YnG-yT-ofV"/>
+                        <outlet property="myfechayhoraTF" destination="IKc-cK-mpH" id="L6O-TB-VpC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tdu-UX-9Bb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1984" y="406"/>
+            <point key="canvasLocation" x="1960" y="406"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lFk-as-5AV">

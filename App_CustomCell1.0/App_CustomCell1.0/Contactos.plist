@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>FirstName</key>
+		<string>Taylor</string>
+		<key>LastName</key>
+		<string>Swift</string>
+		<key>usernameTwitter</key>
+		<string>@taylorswift</string>
+		<key>createdPost</key>
+		<string>2 Semanas</string>
+		<key>Experiencia</key>
+		<string>Cantante/Compositora/Diseñadora</string>
+		<key>Followers</key>
+		<string>100.000.000</string>
+		<key>Abstract</key>
+		<string>Swift es conocida por escribir canciones narrativas acerca de sus experiencias personales. Como compositora, ha sido honrada por la Nashville Songwriters Association y el Salón de la Fama de los Compositores. Entre otros logros de Swift se incluyen diez premios Grammy, un Emmy, veintidós Billboard Music Awards, diecinueve American Music Awards, un premio Brit, seis MTV Video Music Awards, once Country Music Association Awards, así como dos nominaciones al Globo de Oro.</string>
+		<key>description</key>
+		<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit dolor nisl, nec semper elit pretium at. Pellentesque a felis neque.</string>
+		<key>ImageProfile</key>
+		<string>miranda.jpg</string>
+		<key>ImagePost</key>
+		<string>miranda.jpg</string>
+		<key>telefonoMovil</key>
+		<string>637778965</string>
+		<key>telefonoTrabajo</key>
+		<string>914534636</string>
+		<key>email</key>
+		<string>asnasnas@gmail.com</string>
+		<key>cuentaLinkedin</key>
+		<string>guarderjander@gmail.linkedin.com</string>
+	</dict>
+	<dict>
+		<key>FirstName</key>
+		<string>Brad</string>
+		<key>LastName</key>
+		<string>Pitt</string>
+		<key>usernameTwitter</key>
+		<string>@BratPitt</string>
+		<key>createdPost</key>
+		<string>2 Semanas</string>
+		<key>Experiencia</key>
+		<string>Actor</string>
+		<key>Followers</key>
+		<string>1000000000</string>
+		<key>Abstract</key>
+		<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit dolor nisl, nec semper elit pretium at. Pellentesque a felis neque.</string>
+		<key>description</key>
+		<string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit dolor nisl, nec semper elit pretium at. Pellentesque a felis neque.</string>
+		<key>ImageProfile</key>
+		<string>bradpitt.jpg</string>
+		<key>ImagePost</key>
+		<string>bradpitt.jpg</string>
+		<key>telefonoMovil</key>
+		<string>637778965</string>
+		<key>telefonoTrabajo</key>
+		<string>914534636</string>
+		<key>email</key>
+		<string>asnasnas@gmail.com</string>
+		<key>cuentaLinkedin</key>
+		<string>guarderjander@gmail.linkedin.com</string>
+	</dict>
+</array>
+</plist>

@@ -17,5 +17,23 @@ func displayAlertVC(titleData : String, messageData : String) ->  UIAlertControl
 
 }
 
-func crearPicker(mytextField : UITextView , myArray : )
+func crearPicker(myTextField : UITextField, myArray : [String], myTag : Int, myDelegateVC : UIPickerViewDelegate, myDataSourceVC : UIPickerViewDataSource) -> UIPickerView{
+    let myPickerView = UIPickerView()
+    myPickerView.delegate = myDelegateVC
+    myPickerView.dataSource = myDataSourceVC
+    myPickerView.tag = myTag
+    myTextField.inputView = myPickerView
+    myTextField.text = myArray[0]
+    return myPickerView
+}
 
+
+
+func pickerViewValueChaged (sender: UIDatePicker , myTextField: UITextField){
+    
+    let dateFormatter = NSDateFormatter()
+    dateFormatter.dateStyle = .LongStyle
+    dateFormatter.timeStyle = .LongStyle
+    myTextField.text = dateFormatter.stringFromDate(sender .date)
+
+}

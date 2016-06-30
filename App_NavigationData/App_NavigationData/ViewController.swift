@@ -24,6 +24,12 @@ class ViewController: UIViewController {
     
     //MARK: - IBACTION
     
+    @IBAction func cerrarVC(segue: UIStoryboardSegue){
+        
+        print("Logout completado")
+        
+    }
+    
     
     
     override func viewDidLoad() {
